@@ -1,0 +1,172 @@
+.site-topbar {
+  height: 100px;
+  line-height: 100px;
+
+  @include breakpoint(small down) {
+    text-align: center;
+  }
+
+  img.logo {
+    width: 240px;
+  }
+}
+
+.site-banner {
+  background-image: url(../img/injury-banner.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 600px;
+
+  @include breakpoint(small down) {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 130px;
+    margin-bottom: .5em;
+
+    > br {
+      @include breakpoint(small down) {
+        display: none;
+      }
+    }
+
+    @include breakpoint(small down) {
+      margin-top: 1em;
+      font-size: 2em;
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 2em;
+
+    > br {
+      @include breakpoint(small down) {
+        display: none;
+      }
+    }
+  }
+
+  a.button {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    height: 70px;
+    line-height: 70px;
+    width: 260px;
+    background-color: #5c99b0;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+  }
+}
+
+.site-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1em;
+
+    > br {
+      @include breakpoint(small down) {
+        display: none;
+      }
+    }
+  }
+
+  p {
+    font-size: 18px;
+
+    > br {
+      @include breakpoint(small down) {
+        display: none;
+      }
+    }
+
+    > small {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  img.infographic {
+    margin-top: 70px;
+    margin-bottom: 120px;
+  }
+}
+
+.site-cta {
+  background-color: #6199b0;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1em;
+
+    > br {
+      @include breakpoint(small down) {
+        display: none;
+      }
+    }
+  }
+
+  p {
+    font-size: 18px;
+
+    > br {
+      @include breakpoint(small down) {
+        display: none;
+      }
+    }
+  }
+
+  a.button {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    height: 70px;
+    line-height: 70px;
+    width: 260px;
+    background-color: white;
+    color: #6199b0;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    margin-top: 1em;
+  }
+}
+
+.site-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  img.logo {
+    width: 240px;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 16px;
+
+    > a {
+      font-weight: bold;
+      color: #6199b0;
+    }
+  }
+}
+
+#exampleModal1 {
+  background-color: transparent;
+  border: 0;
+}
